@@ -1,0 +1,479 @@
+/* -------------------------------  RESET  ------------------------------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address,
+big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl,
+dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio,
+video { margin: 0; padding: 0; border: 0; vertical-align: baseline;}
+
+html {line-height: 1.15; -webkit-text-size-adjust: 100%;}
+body {margin: 0;}
+main {display: block;}
+h1 {font-size: 2em; margin: 0.67em 0;}
+hr {box-sizing: content-box; height: 0; overflow: visible;}
+pre {font-family: monospace, monospace; font-size: 1em;}
+a {background-color: transparent; text-decoration: none;}
+b, strong {font-weight: bolder;}
+code, kbd, samp {font-family: monospace, monospace; font-size: 1em;}
+small {font-size: 80%;}
+sub, sup {font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
+sub {bottom: -0.25em;}
+sup {top: -0.5em;}
+img {border-style: none;}
+button, input, optgroup, select, textarea {font-family: inherit; font-size: 100%; line-height: 1.15; margin: 0;}
+button, input {overflow: visible;}
+button, select {text-transform: none;}
+button, [type="button"], [type="reset"], [type="submit"] {-webkit-appearance: button;}
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {border-style: none; padding: 0;}
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {outline: 1px dotted ButtonText;}
+fieldset {padding: 0.35em 0.75em 0.625em;}
+legend {box-sizing: border-box; color: inherit; display: table; max-width: 100%; padding: 0; white-space: normal;}
+progress {vertical-align: baseline;}
+textarea {overflow: auto;}
+
+[type="checkbox"], [type="radio"] {box-sizing: border-box; padding: 0;}
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {height: auto;}
+[type="search"] {-webkit-appearance: textfield; outline-offset: -2px;}
+[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}
+::-webkit-file-upload-button {-webkit-appearance: button; font: inherit;}
+
+*{-webkit-box-sizing: border-box; box-sizing: border-box;}
+
+details {display: block;}
+summary {display: list-item;}
+template {display: none;}
+[hidden] {display: none;}
+
+input {outline:none;}
+* {-webkit-tap-highlight-color: rgba(0,0,0,0);}
+input[type=text], input[type=submit], textarea {-webkit-appearance: none;}
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+    -webkit-transition: color 9999s ease-out, background-color 9999s ease-out; -webkit-transition-delay: 9999s;
+}
+select {outline: 0;}
+:focus {outline: none;}
+
+/* -------------------------------  BASE STYLES  ------------------------------- */
+
+body {font-family: 'Euclid Circular A', sans-serif; font-weight: 400; background: #fff; font-size: 14px; line-height: 1.2; color: #160F0F;}
+img {width: 100%;}
+
+.wrap {max-width: 1300px; padding: 0 60px; margin: 0 auto;}
+.title {font-size: 32px; font-weight: 500;}
+
+@media only screen and (max-width: 800px) {
+    .wrap {padding: 0 20px;}
+    .title {font-size: 22px;}
+}
+
+/* ------------------------------- HOME ------------------------------- */
+
+/* header */
+
+/* ... your code here ... */
+@font-face {
+    font-family: EuclidCircularA;
+    src: url(../fonts/EuclidCircularA-Light.ttf);
+}
+* {font-family: EuclidCircularA;}
+
+/* ======================================================= */
+/* ==================БОЛЬШЕ 1000 ========================*/
+/* ======================================================= */
+/* @media (min-width: 1000px) { */
+@media (max-width: 1000px) {
+    .more {display: none}
+    body {
+        padding-left: 4%;
+        width: 100%;
+        padding: 37px 3.7vw 37px 3.7vw;
+    }
+
+    .less {width: 91.4vw;}
+
+    /* ========================header========================= */
+    .header {
+        z-index: 1;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.26vw;
+    }
+
+    .header .header_logo {
+        width: 44vw;
+        height: 10vw;
+    }
+    .header .header_logo a {
+        width: auto;
+        height: 10.3vw;
+        display: block;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .header .header_logo a img:nth-child(1) {
+        width: 10vw;
+        height: 10vw;
+        display: block;
+    }
+    .header .header_logo a img:nth-child(2) {
+        width: 29vw;
+        height: 6.6vw;
+        display: block;
+        margin-top: 1.8vw;
+    }
+    /* ====== */
+    .header .header_button{
+        display: flex;
+        justify-content: flex-end;
+        width: 25.6vw;
+        height: 11.6vw;
+    }
+    .header .header_button a:nth-child(1) img {
+        width: 11.5vw;
+        height: 11.5vw;
+        display: block;
+    }
+    .header .header_button a:nth-child(2) img {
+        width: 11.5vw;
+        height: 11.5vw;
+        display: block;
+    }
+
+    /* ===========================investEasily============================== */
+    .investEasily {
+        margin-top: 6vw;
+        width: 100%;
+        z-index: -1;
+    }
+    .investEasily_rihgt {
+        /* opacity: 0; */
+        opacity: 1;
+        width: 100%;
+    }
+    .investEasily_rihgt img {
+        width: 100%;
+    }
+                /* ============== */
+    .investEasily_left {margin-top: 2.1vw;}
+    .investEasily_left .investEasily_left_first img {
+        width: 91.7vw;
+        height: 52.2vw;
+    }
+                    /* ======================== */
+    .investEasily_left .investEasily_left_second {
+        margin-top: 5.3vw;
+        width: 100%;
+    }
+    .investEasily_left .investEasily_left_second .store {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .investEasily_left .investEasily_left_second .store a {
+        display: block;
+    }
+    .investEasily_left .investEasily_left_second .store a img {
+        display: block;
+        width: 40vw;
+    }
+    .investEasily_left .investEasily_left_second > a {
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 5vw;
+        width: 91.4vw;
+        height: 17vw;
+        border-radius: 3.2vw;
+        background-color: rgba(9, 98, 232, 0);
+        margin-top: 3.2vw;
+    }
+
+    .investEasily_left .investEasily_left_second > a > span {
+        display: block;
+        height: 6.13vw;
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 4.26vw;
+        line-height: 135%;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+    /* ======================================================= */
+    .autoFollow {
+        width: 91.73vw;
+        height: 88vw;
+    }
+    .autoFollow .autoFollow_left {
+        width: 91.73vw;
+        height: 88vw;
+        margin-left: -3.7vw;
+    }
+    .autoFollow .autoFollow_left img {
+        width: 91.73vw;
+        height: 88vw;
+    }
+    .autoFollow .autoFollow_right {
+        width: 91.73vw;
+        margin-bottom: 12.8vw;
+    }
+    .autoFollow .autoFollow_right p:nth-child(1) {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 9.6vw;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        color: #47646D;
+    }
+    .autoFollow .autoFollow_right p:nth-child(1) span {
+        color: #0962E8;
+    }
+    .autoFollow .autoFollow_right p:nth-child(2) {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3.73vw;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: #66778F;
+    }
+}
+/* ======================================================= */
+/* ===================МЕНЬШЕ 1000------------------------ */
+/* ======================================================= */
+/* @media (max-width: 1000px) { */
+@media (min-width: 1000px) {
+    .less {
+         display: none;
+    }
+
+    body {
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+        position: relative;
+    }
+    .more {
+        width: 1272px;
+        height: auto;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    /* ======================header================================= */
+    .header {
+        margin-top: 31px;
+        width: 1272px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header .header_logo {margin-left: 154px;}
+    .header .header_logo a img:nth-child(1) {
+        width: 47px;
+        height: 46px;
+    }
+    .header .header_logo a img:nth-child(2) {
+        position: absolute;
+        width: 135px;
+        height: 31px;
+        margin-left: 13px;
+        margin-top: 9px;
+    }
+    .header .header_button {
+        margin-right: 173px;
+        width: 117px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: rgba(9, 98, 232, 1);
+        padding: 8px 14px;
+        text-align: center;
+    }
+    .header .header_button a {
+        color: rgba(255, 255, 255, 1);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 140%;
+    }
+    /* ==========================investEasily================================== */
+    .investEasily {
+        width: 1272px;
+        margin-top: 83px;
+        padding-left: 156px;
+        padding-right: 51px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .investEasily .investEasily_left {
+        width: 470px;
+    }
+    .investEasily_left_first h1 {
+        color: #0962E8;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 44px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+    }
+    .investEasily_left_first h1 span {
+        color: #47646D;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 44px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+    }
+    .investEasily_left_first p:nth-child(2) {
+        color: #0962E8;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 44px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+    }
+    .investEasily_left_first p:nth-child(2) span:nth-child(1) {
+        color: #47646D;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 111%;
+        letter-spacing: 0.02em;
+    }
+    .investEasily_left_first p:nth-child(2) span::after {
+        content: '*';
+        color: #AEB3BB;
+    }
+    .investEasily_left_first p:nth-child(3) {
+        color: #062B61;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+    }
+    .investEasily_left_second {
+        Width: 260px;
+        margin-top: 24px;
+    }
+    #investEasily_left_first_p {
+        cursor: pointer;
+    }
+    /* .investEasily_left_second > a:nth-child(2) { */
+    .investEasily_left_second > a:nth-child(1) {
+        display: block;
+        width: 260px;
+        height: 54px;
+        background: rgba(9, 98, 232, 1);
+        border-radius: 10px;
+        /* padding: 18px 15px; */
+        padding: 17px 25px;
+    }
+    .investEasily_left_second a:nth-child(1) span {
+        color: #FFFFFF;
+        font-size: 16px;
+        line-height: 135%;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+    .investEasily_left_second .store {
+        margin-top: 18px;
+        display: flex;
+        justify-content: space-between;
+    }
+            /* ==== */
+    #investEasily_rihgt {
+        width: 580px;
+        height: 480px;
+        /* opacity: 0; */
+        opacity: 1;
+    }
+            /* ==== */
+    .general_indicator {
+        visibility: hidden;
+        position: fixed;
+        top: 316px;
+        left: 419px;
+        content: '';
+        width: 222px;
+        height: 72px;
+        border-radius: 10px;
+        padding: 9px 16px;
+        color: #333342;
+        background: #FFFFFF;
+        box-sizing: border-box;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        z-index: 3;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+    }
+    .general_indicator::after {
+        content: '';
+        position: absolute;
+        left: 25px;
+        top: -20px;
+        border: 10px solid transparent;
+        border-bottom: 10px solid #FFFFFF;
+        border-radius: 0px;
+    }
+    .general_indicator .general_indicator_into {
+        font-size: 13px;
+        line-height: 130%;
+        letter-spacing: 0.001em;
+    }
+    /* ================================================= */
+    .autoFollow {
+        width: 1272px;
+        height: 510px;
+        margin-top: 61px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    .autoFollow .autoFollow_left {
+        position: absolute;
+        top: 37px;
+        left: 156px;
+        width: 446px;
+        height: 450px;
+        z-index: 2;
+        /* opacity: 0; */
+        opacity: 1;
+    }
+    .autoFollow .autoFollow_right {
+        position: relative;
+        top: 0px;
+        left: 503px;
+        width: 724px;
+        height: 510px;
+        /* background-color: rgba(6, 43, 97, 0); */
+        background-color: rgba(6, 43, 97, 1);
+        border-radius: 40px;
+        z-index: 1;
+        padding: 54px 123px 61px 135px;
+    }
+    .autoFollow .autoFollow_right > p:nth-child(1) {
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 44px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+    }
+    .autoFollow .autoFollow_right > p:nth-child(1) span {
+        color: #6AA6FF;
+    }
+    .autoFollow .autoFollow_right > p:nth-child(2) {
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        margin-top: 12px;
+    }
+}
